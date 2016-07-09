@@ -1,0 +1,209 @@
+    lhs                       rhs                      support confidence      lift
+1   {}                     => {SibSp=nohas}          0.7654321  0.7654321 1.0000000
+2   {}                     => {Sex=male}             0.6475870  0.6475870 1.0000000
+3   {}                     => {Survived=notSurvived} 0.6161616  0.6161616 1.0000000
+4   {}                     => {PClass=high}          0.5510662  0.5510662 1.0000000
+5   {Sex=male}             => {SibSp=nohas}          0.5319865  0.8214905 1.0732375
+6   {SibSp=nohas}          => {Sex=male}             0.5319865  0.6950147 1.0732375
+7   {Survived=notSurvived} => {Sex=male}             0.5252525  0.8524590 1.3163622
+8   {Sex=male}             => {Survived=notSurvived} 0.5252525  0.8110919 1.3163622
+9   {Survived=notSurvived} => {SibSp=nohas}          0.5072952  0.8233151 1.0756214
+10  {SibSp=nohas}          => {Survived=notSurvived} 0.5072952  0.6627566 1.0756214
+11  {}                     => {Fare=superrich}       0.4826038  0.4826038 1.0000000
+12  {PClass=high}          => {SibSp=nohas}          0.4579125  0.8309572 1.0856054
+13  {SibSp=nohas}          => {PClass=high}          0.4579125  0.5982405 1.0856054
+14  {}                     => {Age=youth}            0.4523008  0.4523008 1.0000000
+15  {Survived=notSurvived,                                                         
+     Sex=male}             => {SibSp=nohas}          0.4455668  0.8482906 1.1082506
+16  {Survived=notSurvived,                                                         
+     SibSp=nohas}          => {Sex=male}             0.4455668  0.8783186 1.3562944
+17  {Sex=male,                                                                     
+     SibSp=nohas}          => {Survived=notSurvived} 0.4455668  0.8375527 1.3593069
+18  {PClass=high}          => {Survived=notSurvived} 0.4175084  0.7576375 1.2296084
+19  {Survived=notSurvived} => {PClass=high}          0.4175084  0.6775956 1.2296084
+20  {Fare=superrich}       => {SibSp=nohas}          0.4051627  0.8395349 1.0968117
+21  {SibSp=nohas}          => {Fare=superrich}       0.4051627  0.5293255 1.0968117
+22  {PClass=high}          => {Sex=male}             0.3894501  0.7067210 1.0913144
+23  {Sex=male}             => {PClass=high}          0.3894501  0.6013865 1.0913144
+24  {}                     => {Survived=Survived}    0.3838384  0.3838384 1.0000000
+25  {Fare=superrich}       => {PClass=high}          0.3737374  0.7744186 1.4053095
+26  {PClass=high}          => {Fare=superrich}       0.3737374  0.6782077 1.4053095
+27  {PClass=high,                                                                  
+     Fare=superrich}       => {SibSp=nohas}          0.3546577  0.9489489 1.2397559
+28  {SibSp=nohas,                                                                  
+     Fare=superrich}       => {PClass=high}          0.3546577  0.8753463 1.5884593
+29  {PClass=high,                                                                  
+     SibSp=nohas}          => {Fare=superrich}       0.3546577  0.7745098 1.6048564
+30  {Survived=notSurvived,                                                         
+     PClass=high}          => {SibSp=nohas}          0.3546577  0.8494624 1.1097815
+31  {PClass=high,                                                                  
+     SibSp=nohas}          => {Survived=notSurvived} 0.3546577  0.7745098 1.2569913
+32  {Survived=notSurvived,                                                         
+     SibSp=nohas}          => {PClass=high}          0.3546577  0.6991150 1.2686589
+33  {}                     => {Sex=female}           0.3524130  0.3524130 1.0000000
+34  {Fare=superrich}       => {Sex=male}             0.3501684  0.7255814 1.1204385
+35  {Sex=male}             => {Fare=superrich}       0.3501684  0.5407279 1.1204385
+36  {Age=youth}            => {SibSp=nohas}          0.3389450  0.7493797 0.9790283
+37  {SibSp=nohas}          => {Age=youth}            0.3389450  0.4428152 0.9790283
+38  {PClass=high,                                                                  
+     Sex=male}             => {SibSp=nohas}          0.3389450  0.8703170 1.1370271
+39  {PClass=high,                                                                  
+     SibSp=nohas}          => {Sex=male}             0.3389450  0.7401961 1.1430064
+40  {Sex=male,                                                                     
+     SibSp=nohas}          => {PClass=high}          0.3389450  0.6371308 1.1561783
+41  {Survived=notSurvived,                                                         
+     PClass=high}          => {Sex=male}             0.3367003  0.8064516 1.2453178
+42  {PClass=high,                                                                  
+     Sex=male}             => {Survived=notSurvived} 0.3367003  0.8645533 1.4031275
+43  {Survived=notSurvived,                                                         
+     Sex=male}             => {PClass=high}          0.3367003  0.6410256 1.1632461
+44  {Fare=superrich}       => {Survived=notSurvived} 0.3265993  0.6767442 1.0983225
+45  {Survived=notSurvived} => {Fare=superrich}       0.3265993  0.5300546 1.0983225
+46  {Sex=male,                                                                     
+     Fare=superrich}       => {SibSp=nohas}          0.3097643  0.8846154 1.1557072
+47  {SibSp=nohas,                                                                  
+     Fare=superrich}       => {Sex=male}             0.3097643  0.7645429 1.1806027
+48  {Sex=male,                                                                     
+     SibSp=nohas}          => {Fare=superrich}       0.3097643  0.5822785 1.2065352
+49  {PClass=high,                                                                  
+     Fare=superrich}       => {Sex=male}             0.2985410  0.7987988 1.2335004
+50  {Sex=male,                                                                     
+     Fare=superrich}       => {PClass=high}          0.2985410  0.8525641 1.5471173
+51  {PClass=high,                                                                  
+     Sex=male}             => {Fare=superrich}       0.2985410  0.7665706 1.5884056
+52  {Survived=notSurvived,                                                         
+     Fare=superrich}       => {SibSp=nohas}          0.2974186  0.9106529 1.1897240
+53  {SibSp=nohas,                                                                  
+     Fare=superrich}       => {Survived=notSurvived} 0.2974186  0.7340720 1.1913628
+54  {Survived=notSurvived,                                                         
+     SibSp=nohas}          => {Fare=superrich}       0.2974186  0.5862832 1.2148333
+55  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Sex=male}             => {SibSp=nohas}          0.2974186  0.8833333 1.1540323
+56  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     SibSp=nohas}          => {Sex=male}             0.2974186  0.8386076 1.2949729
+57  {PClass=high,                                                                  
+     Sex=male,                                                                     
+     SibSp=nohas}          => {Survived=notSurvived} 0.2974186  0.8774834 1.4241125
+58  {Survived=notSurvived,                                                         
+     Sex=male,                                                                     
+     SibSp=nohas}          => {PClass=high}          0.2974186  0.6675063 1.2112996
+59  {Age=youth}            => {Sex=male}             0.2962963  0.6550868 1.0115813
+60  {Sex=male}             => {Age=youth}            0.2962963  0.4575390 1.0115813
+61  {PClass=high,                                                                  
+     Fare=superrich}       => {Survived=notSurvived} 0.2940516  0.7867868 1.2769163
+62  {Survived=notSurvived,                                                         
+     Fare=superrich}       => {PClass=high}          0.2940516  0.9003436 1.6338212
+63  {Survived=notSurvived,                                                         
+     PClass=high}          => {Fare=superrich}       0.2940516  0.7043011 1.4593773
+64  {Survived=notSurvived,                                                         
+     Fare=superrich}       => {Sex=male}             0.2940516  0.9003436 1.3903053
+65  {Sex=male,                                                                     
+     Fare=superrich}       => {Survived=notSurvived} 0.2940516  0.8397436 1.3628625
+66  {Survived=notSurvived,                                                         
+     Sex=male}             => {Fare=superrich}       0.2940516  0.5598291 1.1600179
+67  {PClass=high,                                                                  
+     Sex=male,                                                                     
+     Fare=superrich}       => {SibSp=nohas}          0.2850730  0.9548872 1.2475139
+68  {PClass=high,                                                                  
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Sex=male}             0.2850730  0.8037975 1.2412193
+69  {Sex=male,                                                                     
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {PClass=high}          0.2850730  0.9202899 1.6700168
+70  {PClass=high,                                                                  
+     Sex=male,                                                                     
+     SibSp=nohas}          => {Fare=superrich}       0.2850730  0.8410596 1.7427537
+71  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Fare=superrich}       => {SibSp=nohas}          0.2783389  0.9465649 1.2366412
+72  {PClass=high,                                                                  
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Survived=notSurvived} 0.2783389  0.7848101 1.2737082
+73  {Survived=notSurvived,                                                         
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {PClass=high}          0.2783389  0.9358491 1.6982515
+74  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     SibSp=nohas}          => {Fare=superrich}       0.2783389  0.7848101 1.6261996
+75  {Age=youth}            => {Survived=notSurvived} 0.2704826  0.5980149 0.9705488
+76  {Survived=notSurvived} => {Age=youth}            0.2704826  0.4389800 0.9705488
+77  {Survived=notSurvived,                                                         
+     Sex=male,                                                                     
+     Fare=superrich}       => {SibSp=nohas}          0.2693603  0.9160305 1.1967496
+78  {Survived=notSurvived,                                                         
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Sex=male}             0.2693603  0.9056604 1.3985154
+79  {Sex=male,                                                                     
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Survived=notSurvived} 0.2693603  0.8695652 1.4112616
+80  {Survived=notSurvived,                                                         
+     Sex=male,                                                                     
+     SibSp=nohas}          => {Fare=superrich}       0.2693603  0.6045340 1.2526507
+81  {}                     => {Fare=midclass}        0.2626263  0.2626263 1.0000000
+82  {Sex=female}           => {Survived=Survived}    0.2615039  0.7420382 1.9332048
+83  {Survived=Survived}    => {Sex=female}           0.2615039  0.6812865 1.9332048
+84  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Fare=superrich}       => {Sex=male}             0.2615039  0.8893130 1.3732719
+85  {PClass=high,                                                                  
+     Sex=male,                                                                     
+     Fare=superrich}       => {Survived=notSurvived} 0.2615039  0.8759398 1.4216073
+86  {Survived=notSurvived,                                                         
+     Sex=male,                                                                     
+     Fare=superrich}       => {PClass=high}          0.2615039  0.8893130 1.6138042
+87  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Sex=male}             => {Fare=superrich}       0.2615039  0.7766667 1.6093256
+88  {Survived=Survived}    => {SibSp=nohas}          0.2581369  0.6725146 0.8786078
+89  {SibSp=nohas}          => {Survived=Survived}    0.2581369  0.3372434 0.8786078
+90  {}                     => {Fare=poor}            0.2547699  0.2547699 1.0000000
+91  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Sex=male,                                                                     
+     Fare=superrich}       => {SibSp=nohas}          0.2502806  0.9570815 1.2503807
+92  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Sex=male}             0.2502806  0.8991935 1.3885294
+93  {PClass=high,                                                                  
+     Sex=male,                                                                     
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {Survived=notSurvived} 0.2502806  0.8779528 1.4248741
+94  {Survived=notSurvived,                                                         
+     Sex=male,                                                                     
+     SibSp=nohas,                                                                  
+     Fare=superrich}       => {PClass=high}          0.2502806  0.9291667 1.6861253
+95  {Survived=notSurvived,                                                         
+     PClass=high,                                                                  
+     Sex=male,                                                                     
+     SibSp=nohas}          => {Fare=superrich}       0.2502806  0.8415094 1.7436858
+96  {}                     => {PClass=low}           0.2424242  0.2424242 1.0000000
+97  {Sex=male,                                                                     
+     Age=youth}            => {SibSp=nohas}          0.2390572  0.8068182 1.0540689
+98  {Age=youth,                                                                    
+     SibSp=nohas}          => {Sex=male}             0.2390572  0.7052980 1.0891170
+99  {Sex=male,                                                                     
+     SibSp=nohas}          => {Age=youth}            0.2390572  0.4493671 0.9935138
+100 {Age=youth}            => {PClass=high}          0.2379349  0.5260546 0.9546123
+101 {PClass=high}          => {Age=youth}            0.2379349  0.4317719 0.9546123
+102 {Survived=notSurvived,                                                         
+     Age=youth}            => {Sex=male}             0.2356902  0.8713693 1.3455633
+103 {Sex=male,                                                                     
+     Age=youth}            => {Survived=notSurvived} 0.2356902  0.7954545 1.2909836
+104 {Survived=notSurvived,                                                         
+     Sex=male}             => {Age=youth}            0.2356902  0.4487179 0.9920786
+105 {}                     => {SibSp=has}            0.2345679  0.2345679 1.0000000
+106 {Sex=female}           => {SibSp=nohas}          0.2334456  0.6624204 0.8654202
+107 {SibSp=nohas}          => {Sex=female}           0.2334456  0.3049853 0.8654202
+108 {Age=youth}            => {Fare=superrich}       0.2300786  0.5086849 1.0540424
+109 {Fare=superrich}       => {Age=youth}            0.2300786  0.4767442 1.0540424
+110 {Survived=notSurvived,                                                         
+     Age=youth}            => {SibSp=nohas}          0.2154882  0.7966805 1.0408245
+111 {Age=youth,                                                                    
+     SibSp=nohas}          => {Survived=notSurvived} 0.2154882  0.6357616 1.0318098
+112 {Survived=notSurvived,                                                         
+     SibSp=nohas}          => {Age=youth}            0.2154882  0.4247788 0.9391511
+113 {}                     => {Age=kid}              0.2143659  0.2143659 1.0000000
+114 {}                     => {PClass=mid}           0.2065095  0.2065095 1.0000000

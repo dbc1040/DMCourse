@@ -1,0 +1,13 @@
+lhs            rhs          support     confidence      lift
+1{Class=2nd,                                                   
+   Age=Child}=>{Survived=Yes}0.010904134  1.0000000     3.0956399
+2{Class=1st,                                                   
+   Age=Child}=>{Survived=Yes}0.002726034  1.0000000     3.0956399
+3{Class=1st,                                                   
+   Age=Adult}=>{Survived=Yes}0.089504771  0.6175549     1.9117275
+4{Class=2nd,                                                   
+   Age=Adult}=>{Survived=Yes}0.042707860  0.3601533     1.1149048
+5{Class=3rd,                                                   
+   Age=Child}=>{Survived=Yes}0.012267151  0.3417722     1.0580035
+6{Class=3rd,                                                   
+   Age=Adult}=>{Survived=Yes}0.068605179  0.2408293     0.7455209
